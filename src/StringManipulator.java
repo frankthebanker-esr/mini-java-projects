@@ -105,20 +105,3 @@ public class StringManipulator {
 		return count;
 	}
 }
-
-
-/*     Count vowels  
-
-    Reverse  
-
-    Print in uppercase   
-
-    Print the acronym  
-
-    Number of words in the string   
-
-    Number of characters in the string  
-
-    Number of digits (1,2,3 etc) in the string  
-
-    Exit */
