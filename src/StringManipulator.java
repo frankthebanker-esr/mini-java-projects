@@ -5,7 +5,7 @@ public class StringManipulator {
 		System.out.println("Please enter the String: ");
 		String str = scanner.nextLine();
 
-		System.out.println("Please choose what you would like to do: ");
+		System.out.println("Please choose what you would like to do (1-8): ");
 		System.out.println("1. Count Vowels in String");
 		System.out.println("2. Reverse String");
 		System.out.println("3. Print String in Uppercase");
@@ -18,7 +18,7 @@ public class StringManipulator {
 
 		switch (choice) {
 		case 1:
-			System.out.println("There are " + countVowels(str) + " Vowels in the String");
+			System.out.println("There are " + countVowels(str) + " Vowel(s) in the String");
 			break;
 		case 2:
 			System.out.println("The String Reversed: " + getReverse(str));
@@ -33,18 +33,19 @@ public class StringManipulator {
 			System.out.println("The Acronym: " + getAcronym(str));
 			break;
 		case 6:
-			System.out.println("There are " + countWords(str) + " Words in the String");
+			System.out.println("There are " + countWords(str) + " Word(s) in the String");
 			break;
 		case 7:
-			System.out.println("There are " + str.length() + " Characters in the String");
+			System.out.println("There are " + str.length() + " Character(s) in the String");
 			break;
 		case 8:
-			System.out.println("There are " + countDigits(str) + " Digits in the String");
+			System.out.println("There are " + countDigits(str) + " Digit(s) in the String");
 			break;
 			
 		}
 
 		scanner.close();
+
 	}
 	public static int countVowels(String str) {
 		int count = 0;
